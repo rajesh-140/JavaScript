@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div class='container'>
+      <header>
+       <h1>Random Users</h1>
+      </header>
+
+      <input type="text" id="searchbar" placeholder="🔎Search"></input>
+      <div>
+      <p id='totalno'></p>
+      <p id='ageavg'></p>
+      </div>
+      
+      
+          <div id='radiobtn'>    
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+  
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+          </div> <br>
+          
+      
+    <div id='sortdiv'>
+      <select name="sort-by" id="sort-by">
+        <option disabled hidden selected value='--Sort by--'>--Sort by--</option>
+        <option id='sortname'value="name">Name</option>
+        <option id='sortage'value="age">Age</option>
+        <option id='sortcountry'value="country">Country</option>
+      </select>
+    </div><br>
+
+    <div>
+        <label for="fromdate"><b>Search By DOB:</b></label> 
+        <label for="fromdate">From</label> 
+        <input type="date" id="fromdate" >
+         
+        <label for="todate">-To</label> 
+        <input type="date" id="todate" >
+        <button id="applybtn">Apply</button>
+    </div> <br>
+
+    <button  id="reset" >Reset</button>
+
+    <div class="card">  </div>
+
+      
+      <p id="loading"></p>
+      
+      <button id="btn">Load More</button>
+    
+  </div>
+
+    
+    <!-- <div class="demo"></div> -->
+
+    <script src="myscripts.js"></script>
+  </body>
+</html>
